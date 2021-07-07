@@ -282,6 +282,7 @@ html {
   --mb-0-25: 0.25;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
@@ -710,3 +711,141 @@ img {
     transform: rotate(-180deg)
 }
 
+
+/* Qualification Area */
+
+
+.qualification-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification-button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification-button:hover {
+  color: var(--first-color);
+}
+
+.qualification-icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25)
+}
+
+
+.qualification-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification-title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification-subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification-calender {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification-rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -6px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualification-active[data-content] {
+  display: block;
+}
+
+.qualification-button.qualification-active {
+  color: var(--first-color);
+}
+
+/* Project section */
+
+.project-container {
+  overflow: initial;
+}
+
+.project-content {
+  padding: 0 1.5rem;
+}
+
+.project-img {
+  width: 265px;
+  /* height: 150px; */
+  
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.project-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.project-description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.project-button:hover .button-icon {
+  transform: translateX(0.25rem)
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-project-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -.5rem;
+}
+
+.swiper-button-next {
+  right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-container-bullets {
+  bottom: -.2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}

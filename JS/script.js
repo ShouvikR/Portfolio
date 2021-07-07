@@ -19,7 +19,6 @@ const navMenu = document.getElementById('nav-menu');
     }
 
 
-
     // Remove menu on mobile screen
     const navLink = document.querySelectorAll('.nav-link');
 
@@ -52,3 +51,43 @@ const navMenu = document.getElementById('nav-menu');
     skillsHeader.forEach((el) => {
         el.addEventListener('click', toggleSkills)
     })
+
+    // Qualification area
+
+    const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]');
+
+      tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              const target = document.querySelector(tab.dataset.target)
+
+              tabContents.forEach(tabContent => {
+                  tabContent.classList.remove('qualification-active')
+              })
+
+              target.classList.add('qualification-active')
+
+              tabs.forEach(tab => {
+                  tab.classList.remove('qualification-active');
+              })
+              tab.classList.add('qualification-active');
+
+          })
+      })
+
+    //   Project swiper section
+
+     let swiper = new Swiper(".project-container", {
+       cssMode: true,
+       loop: true,
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       mousewheel: true,
+       keyboard: true,
+     });
