@@ -613,6 +613,15 @@ body.dark-theme {
     align-items: center;
 }
 
+.form-button {
+  border: 0;
+  cursor: pointer;
+}
+
+.form-button:hover .button-icon {
+  transform: translateX(0.3rem);
+}
+
 /* About */
 /* 
 .about-img {
