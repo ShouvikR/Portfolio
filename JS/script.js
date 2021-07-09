@@ -1,3 +1,24 @@
+
+
+// Typed animation
+
+let typed = new Typed(".typing", {
+  strings: [
+    "I am a Front-End Web Developer.",
+    "I like to watch Animation movies,",
+    "enjoy cooking, travelling, story writing.",
+    "And I just looove CODING!! ",
+  ],
+  typeSpeed: 75,
+  // backSpeed: false,
+  backDelay: 1520,
+  fadeOut: true,
+  loop: true
+
+});
+
+
+
 // Menu hide & show
 
 const navMenu = document.getElementById("nav-menu");

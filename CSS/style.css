@@ -409,7 +409,7 @@ img {
 
 body.dark-theme {
 
-  --hue-color: 250;
+  --hue-color: 245;
   
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
@@ -525,7 +525,7 @@ body.dark-theme {
 }
 
 .home-social-icon:hover  {
-    color: var(--first-color-alt);
+    color: var(--text-color);
 } 
 
 .home-img {
@@ -540,6 +540,10 @@ body.dark-theme {
 
 .home-data {
     grid-column: 1/3;
+}
+
+.typing-animation {
+    margin-bottom: var(--mb-0-5);
 }
 
 .home-title {
