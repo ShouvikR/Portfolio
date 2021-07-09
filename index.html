@@ -636,24 +636,28 @@
 
           </div>
 
-          <form action="" class="contact-form grid">
+          <form name="contact" method="POST" data-netlify="true" class="contact-form grid">
             <div class="contact-inputs grid">
 
               <div class="contact-content">
                 <label for="" class="contact-label">Name</label>
-                <input type="text" class="contact-input">
+                <input type="text" name="name" class="contact-input">
               </div>
 
               <div class="contact-content">
                 <label for="" class="contact-label">Email</label>
-                <input type="email" class="contact-input">
+                <input type="email" name="email" class="contact-input">
               </div>
 
             </div>
 
             <div class="contact-content">
                 <label for="" class="contact-label">Message</label>
-                <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+                <textarea name="message" id="" cols="0" rows="7" class="contact-input"></textarea>
+            </div>
+
+            <div class="">
+                <div data-netlify-recaptcha="true"></div>
             </div>
             
             <div>
