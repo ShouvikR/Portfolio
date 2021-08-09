@@ -6,8 +6,9 @@ let typed = new Typed(".typing", {
   strings: [
     "I am a Front-End Web Developer.",
     "I like to watch Animation movies,",
-    "enjoy cooking and  travelling",
-    "And I just looove CODING!! ",
+    "enjoy learning new things, travelling",
+    "An optimistic person",
+    "And dedicated and very passionate about CODING!! ",
   ],
   typeSpeed: 75,
   // backSpeed: false,
