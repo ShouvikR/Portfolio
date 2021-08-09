@@ -6,7 +6,7 @@ let typed = new Typed(".typing", {
   strings: [
     "I am a Front-End Web Developer.",
     "I like to watch Animation movies,",
-    "enjoy learning new things & travelling.",
+    "enjoy learning new things and travelling.",
     "An optimistic person.",
     "And very passionate about CODING!!",
   ],
