@@ -6,16 +6,15 @@ let typed = new Typed(".typing", {
   strings: [
     "I am a Front-End Web Developer.",
     "I like to watch Animation movies,",
-    "enjoy learning new things, travelling",
-    "An optimistic person",
-    "And dedicated and very passionate about CODING!! ",
+    "enjoy learning new things & travelling.",
+    "An optimistic person.",
+    "And very passionate about CODING!!",
   ],
   typeSpeed: 75,
   // backSpeed: false,
   backDelay: 1520,
   fadeOut: true,
-  loop: true
-
+  loop: true,
 });
 
 
